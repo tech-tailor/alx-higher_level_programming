@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new = []
-    for i in range(0, len(matrix)):
-        new.append(list(map((lambda x: x * x), matrix[i])))
-    return new
+    new_matrix = []
+    for k in matrix:
+        new_row = []
+        for j in range(0, len(k)):
+            new_row.append(k[j] * k[j])
+        new_matrix.append(new_row)
+
+    return new_matrix
