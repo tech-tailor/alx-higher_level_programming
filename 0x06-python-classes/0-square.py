@@ -12,6 +12,8 @@ Example:
     >>> print(my_square.__dict__)
     {}
 """
+
+
 class Square:
     """
     Represent a square
