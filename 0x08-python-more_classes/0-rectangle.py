@@ -8,6 +8,7 @@ classes:
 - Rectangle: A class representing rectangle
 """
 
+
 class Rectangle:
     """
     this is a class called rectangle
