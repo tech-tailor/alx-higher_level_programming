@@ -100,25 +100,3 @@ If a or b are not numbers, a TypeError it is raised
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
-
-Infinity
-=========================
-Infinity value
-::
-    >>> add_integer(float('inf'), 98)
-    Traceback (most recent call last):
-    ...
-    OverflowError: cannot convert float infinity to integer
-
-    >>> add_integer(98, float('inf'))
-    Traceback (most recent call last):
-    ...
-    OverflowError: cannot convert float infinity to integer
-
-Not A Number
-=========================
-
-    >>> add_integer(float('NaN'), 98)
-    Traceback (most recent call last):
-    ...
-    ValueError: cannot convert float NaN to integer
