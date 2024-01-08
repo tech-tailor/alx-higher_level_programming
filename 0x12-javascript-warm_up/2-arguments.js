@@ -1,10 +1,13 @@
 #!/usr/bin/node
 
 const args = process.argv;
-const argsLenght = args.length;
-if (argsLenght === 2) {
+let allArgs = 0;
+args.forEach(arg => {
+  allArgs += 1;
+});
+if (allArgs === 2) {
   console.log('No argument');
-} else if (argsLenght === 3) {
+} else if (allArgs === 3) {
   console.log('Argment found');
 } else {
   console.log('Arguments found');
