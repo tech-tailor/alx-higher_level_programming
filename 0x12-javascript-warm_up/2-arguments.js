@@ -8,7 +8,7 @@ args.forEach(arg => {
 if (allArgs === 2) {
   console.log('No argument');
 } else if (allArgs === 3) {
-  console.log('Argment found');
+  console.log('Argument found');
 } else {
   console.log('Arguments found');
 }
