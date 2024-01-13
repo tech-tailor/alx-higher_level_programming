@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This module to check database
+""" This module lists all state with a name
+starting with N (upper N) from the 
+database hbtn_0e_0_usa
 """
 
 
@@ -8,8 +10,11 @@ import MySQLdb
 
 
 def list_state(user, password, database):
-    """This function list a table
-        from th database
+    """
+    This function take user, password and database
+    as args then print out list of states starting with
+    N (upper N) from a 
+    database.
     """
 
     db = MySQLdb.connect(
@@ -19,7 +24,7 @@ def list_state(user, password, database):
         )
     cursor = db.cursor()
 
-    myQuery = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id"
+    myQuery = "SELECT * FROM states WHERE BINARY name LIKE 'P%' ORDER BY id"
 
     cursor.execute(myQuery)
 
