@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ This module lists all state with a name
-starting with N (upper N) from the 
-database hbtn_0e_0_usa
+    starting with N (upper N) from the
+    database hbtn_0e_0_usa
 """
 
 
@@ -13,8 +13,7 @@ def list_state(user, password, database):
     """
     This function take user, password and database
     as args then print out list of states starting with
-    N (upper N) from a 
-    database.
+    N (upper N) from a database.
     """
 
     db = MySQLdb.connect(
