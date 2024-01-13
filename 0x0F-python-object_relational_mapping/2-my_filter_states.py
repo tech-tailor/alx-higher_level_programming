@@ -19,7 +19,7 @@ def list_state(user, password, database, state):
         )
     cursor = db.cursor()
 
-    myQuery = f"SELECT * FROM states WHERE name = '{state}' ORDER BY id;"
+    myQuery = f"SELECT * FROM states WHERE BINARY name LIKE '{state}' ORDER BY id;"
 
     cursor.execute(myQuery)
 
@@ -31,5 +31,7 @@ def list_state(user, password, database, state):
 
 
 if __name__ == "__main__":
+    
     user, password, database, state = sys.argv[1:]
     list_state(user, password, database, state)
+    
