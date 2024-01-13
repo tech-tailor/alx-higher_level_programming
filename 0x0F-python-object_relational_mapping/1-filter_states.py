@@ -24,7 +24,7 @@ def list_state(user, password, database):
         )
     cursor = db.cursor()
 
-    myQuery = "SELECT * FROM states WHERE BINARY name LIKE 'P%' ORDER BY id"
+    myQuery = "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id"
 
     cursor.execute(myQuery)
 
