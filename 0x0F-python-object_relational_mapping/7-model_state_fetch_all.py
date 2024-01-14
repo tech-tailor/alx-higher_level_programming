@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+list all objects from the database
+"""
+
+
 from sqlalchemy.orm import sessionmaker
 import sys
 from model_state import Base, State
@@ -17,9 +22,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    all_items = session.query(State).order_by(State.id).all()
-
-    for item in all_items:
+    for item in session.query(State).order_by(State.id):
         print(f"{item.id}: {item.name}")
 
     session.close()
